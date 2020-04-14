@@ -24,11 +24,8 @@ class MyHomePage extends StatelessWidget {
             .of(context)
             .size
             .height,
-        width: MediaQuery
-            .of(context)
-            .size
-            .width,
         child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: <Widget>[
             Align(
               alignment: Alignment.centerLeft,
@@ -56,10 +53,8 @@ class MyHomePage extends StatelessWidget {
             Align(
                 alignment: Alignment.center,
                 child: Container(
-                    width: MediaQuery
-                        .of(context)
-                        .size
-                        .width - 60,
+                    margin: EdgeInsets.symmetric(horizontal: 30.0),
+                    width: 240.0,
                     height: MediaQuery
                         .of(context)
                         .size
@@ -91,16 +86,6 @@ class MyHomePage extends StatelessWidget {
                 ),
               ),
             ),
-
-//            Align(
-//              alignment: Alignment.center,
-//              child: Container(
-//                width: 350,
-//                child: Stack(
-//                  children: cardList,
-//                ),
-//              ),
-//            ),
           ],
         ),
       ),

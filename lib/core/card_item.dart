@@ -1,5 +1,5 @@
 
 class CardItem {
-  String content;
-  CardItem(this.content);
+  final String content;
+   CardItem(this.content);
 }
